@@ -1,0 +1,20 @@
+DATA:
+    BATCH_SIZE: 2 
+MODEL:
+    DROPOUT: 0.1
+    BACKBONE: "resnet101"
+    NUM_QUERIES: 100
+    TRANS:
+        NUM_ENCODERS: 6
+        NUM_DECODERS: 6
+        EMBED_DIM: 256
+        MLP_RATIO: 8.0
+        NUM_HEADS: 8
+TRAIN:
+    BASE_LR: 1e-4
+    GRAD_CLIP: 0.1
+    WEIGHT_DECAY: 1e-4
+    NUM_EPOCHS: 300
+    
+
+
